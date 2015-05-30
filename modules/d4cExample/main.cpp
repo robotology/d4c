@@ -18,8 +18,6 @@
 /** 
 \defgroup d4cExample d4cExample
  
-@ingroup icub_module  
- 
 Example module for the use of \ref d4c "D4C Library".
 
 \section intro_sec Description 

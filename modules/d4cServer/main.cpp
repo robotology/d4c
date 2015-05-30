@@ -18,8 +18,6 @@
 /** 
 \defgroup d4cServer d4cServer 
  
-@ingroup icub_module
- 
 Just a container which runs the server part of the \ref d4c 
 "Dynamic Force Field Controller" (D4C) framework. 
  
