@@ -1,0 +1,806 @@
+\section{i\+Cub\+:\+:d4c\+:\+:D4\+C Class Reference}
+\label{classiCub_1_1d4c_1_1D4C}\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+
+
+The Definition of the \hyperlink{classiCub_1_1d4c_1_1D4C}{D4\+C} Interface.  
+
+
+
+
+{\ttfamily \#include $<$d4c.\+h$>$}
+
+
+
+Inherited by i\+Cub\+::d4c\+::\+D4\+C\+Client, and i\+Cub\+::d4c\+::\+D4\+C\+Server.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a75eea02600be0bebb85d0deddd6ecb8e}{open} (const yarp\+::os\+::\+Property \&options)=0
+\begin{DoxyCompactList}\small\item\em Configure the client or the server part of d4c framework. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classiCub_1_1d4c_1_1D4C_a2b1d795a30a93b5ed76d91a13a545038}{close} ()=0
+\begin{DoxyCompactList}\small\item\em Stop the client/server and dispose it. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_ae24c8b8dfa644fbb10ac87741fe0dbc0}{add\+Item} (const yarp\+::os\+::\+Property \&options, int \&item)=0
+\begin{DoxyCompactList}\small\item\em Request for the creation of a new d4c entity which can be either a target or an obstacle. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_af002871cc663a24c9a0e2b012b8a020c}{erase\+Item} (const int item)=0
+\begin{DoxyCompactList}\small\item\em Remove one item from the items table. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a19a3d52ae4415d106cbdf30fa7487a7f}{clear\+Items} ()=0
+\begin{DoxyCompactList}\small\item\em Purge all the items contained in the table. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_ae922d4224e9be5fc4c72c720c45acef6}{get\+Items} (yarp\+::os\+::\+Bottle \&items)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the list of all available items. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a066c48516b3927a3a5b32d38b69972a0}{set\+Property} (const int item, const yarp\+::os\+::\+Property \&options)=0
+\begin{DoxyCompactList}\small\item\em Allow changing the properties of an existing item. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a6d9a79974f82e5447b62ce988ddac97c}{get\+Property} (const int item, yarp\+::os\+::\+Property \&options)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the properties of an existing item. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a45e42c71e94db9285f8ceea5ac31070a}{enable\+Field} ()=0
+\begin{DoxyCompactList}\small\item\em Enable the generation of the d4c field. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_ac33e94206a98fa9f4cd4151e251f050e}{disable\+Field} ()=0
+\begin{DoxyCompactList}\small\item\em Disable the generation of the d4c field. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_abd5f01a0fbb06b5e6fd034ed0dc65873}{get\+Field\+Status} (bool \&status)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the current status of the d4c field. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a47d6b5e69fb5d56e4a34680d492cc830}{enable\+Control} ()=0
+\begin{DoxyCompactList}\small\item\em Enable the control of the robot part. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_aa2b70621e2053127c25c00400b937231}{disable\+Control} ()=0
+\begin{DoxyCompactList}\small\item\em Disable the control of the robot part. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a00f45d51ca6bd89bb660db4520806b4b}{get\+Control\+Status} (bool \&status)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the current status of the robot part control. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a182d7535cc875bccbd8044aa2cc075c3}{enable\+Simulation} ()=0
+\begin{DoxyCompactList}\small\item\em Enable the simulation of the robot part. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_ac735547b8b00778bb523ac0e2a9acdf4}{disable\+Simulation} ()=0
+\begin{DoxyCompactList}\small\item\em Disable the simulation of the robot part. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a4dab04b8c61043f2b2734b3604ecd527}{get\+Simulation\+Status} (bool \&status)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the current status of the robot part simulation. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_af9d4211503ab1a3ae73b00e16b731108}{set\+Period} (const int period)=0
+\begin{DoxyCompactList}\small\item\em Allow changing the thread period for d4c field generation. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a68985c5667ecf81a0990218f4edd441a}{get\+Period} (int \&period)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the current thread period for d4c field generation. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a8ee6a9df7d60fa176b44e06b14cf8247}{set\+Point\+State\+To\+Tool} ()=0
+\begin{DoxyCompactList}\small\item\em Allow setting the trajectory state equal to the currently attached tool state (or end-\/effector state if no tool is attached). \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_af2423c24c50073666982ce93bb1c9312}{attach\+Tool\+Frame} (const yarp\+::sig\+::\+Vector \&x, const yarp\+::sig\+::\+Vector \&o)=0
+\begin{DoxyCompactList}\small\item\em Attach a tool frame to the end-\/effector. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a0d20b0cba2b361c0e8d05e9f8e5c917a}{get\+Tool\+Frame} (yarp\+::sig\+::\+Vector \&x, yarp\+::sig\+::\+Vector \&o)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the frame of the tool currently attached to the end-\/effector. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a7129985803f69bd51fbb1368bd5f9f60}{remove\+Tool\+Frame} ()=0
+\begin{DoxyCompactList}\small\item\em Remove the tool currently attached to the end-\/effector. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a2ff9c69ba856930358efaa35cfa64585}{get\+Tool} (yarp\+::sig\+::\+Vector \&x, yarp\+::sig\+::\+Vector \&o)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the coordinates of the tool currently attached to the end-\/effector. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a5ab471d083e50b057f6926bccfcc5593}{set\+Point\+State} (const yarp\+::sig\+::\+Vector \&x, const yarp\+::sig\+::\+Vector \&o, const yarp\+::sig\+::\+Vector \&xdot, const yarp\+::sig\+::\+Vector \&odot)=0
+\begin{DoxyCompactList}\small\item\em Allow chainging the trajectory state generated by the d4c framework. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a1d5d93db7189eb3949297b3937f4ef90}{set\+Point\+Orientation} (const yarp\+::sig\+::\+Vector \&o, const yarp\+::sig\+::\+Vector \&odot)=0
+\begin{DoxyCompactList}\small\item\em Allow changing the orientation state of the trajectory generated by the d4c framework. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a8e9e4d5fad4ad121864c93bacc392161}{get\+Point\+State} (yarp\+::sig\+::\+Vector \&x, yarp\+::sig\+::\+Vector \&o, yarp\+::sig\+::\+Vector \&xdot, yarp\+::sig\+::\+Vector \&odot)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the current trajectory state generated by the d4c framework. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_aa82fff9783d8210c97bfcdbfa5d01813}{get\+Field} (yarp\+::sig\+::\+Vector \&field)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the current field as generated by the d4c framework. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_ac3d362bba8082a83a3cfba1942c1370e}{get\+Simulation} (yarp\+::sig\+::\+Vector \&xhat, yarp\+::sig\+::\+Vector \&ohat, yarp\+::sig\+::\+Vector \&qhat)=0
+\begin{DoxyCompactList}\small\item\em Sample step by step the trajectory the end-\/effector will follow as constrained by the d4c field. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a601278b27f13393fbc50dd548f08fdda}{get\+Active\+I\+F} (std\+::string \&active\+I\+F)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the interface currently active that controls the limb. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a219e88e157347cb291d55bf5067e4ceb}{set\+Active\+I\+F} (const std\+::string \&active\+I\+F)=0
+\begin{DoxyCompactList}\small\item\em Set the active interface for limb control. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_aec027b12db795a04fc670c0cd44f3e80}{get\+Trajectory} (std\+::deque$<$ yarp\+::sig\+::\+Vector $>$ \&traj\+Pos, std\+::deque$<$ yarp\+::sig\+::\+Vector $>$ \&traj\+Orien, const unsigned int max\+Iterations=D4\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+I\+T\+E\+R\+A\+T\+I\+O\+N\+S, const double Ts=D4\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D)=0
+\begin{DoxyCompactList}\small\item\em Retrieve the complete simulated trajectory as evolved from the current state point. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCub_1_1d4c_1_1D4C_a6f66476a32900c4f706cd93184b4ba45}{execute\+Trajectory} (const std\+::deque$<$ yarp\+::sig\+::\+Vector $>$ \&traj\+Pos, const std\+::deque$<$ yarp\+::sig\+::\+Vector $>$ \&traj\+Orien, const double traj\+Time)=0
+\begin{DoxyCompactList}\small\item\em Execute the simulated trajectory provided by the user. \end{DoxyCompactList}\item 
+virtual \hyperlink{classiCub_1_1d4c_1_1D4C_a0bc97e58910fb33837a6266f443c2b62}{$\sim$\+D4\+C} ()\label{classiCub_1_1d4c_1_1D4C_a0bc97e58910fb33837a6266f443c2b62}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Definition of the \hyperlink{classiCub_1_1d4c_1_1D4C}{D4\+C} Interface. 
+
+Definition at line 54 of file d4c.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!add\+Item@{add\+Item}}
+\index{add\+Item@{add\+Item}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{add\+Item}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::add\+Item (
+\begin{DoxyParamCaption}
+\item[{const yarp\+::os\+::\+Property \&}]{options, }
+\item[{int \&}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_ae24c8b8dfa644fbb10ac87741fe0dbc0}
+
+
+Request for the creation of a new d4c entity which can be either a target or an obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & contains the set of options in form of a Property object. \\
+\hline
+{\em item} & here is returned the unique item identifier to be used for later access.\\
+\hline
+\end{DoxyParams}
+Options common to all items\+:
+
+{\bfseries name} $<$string$>$\+: example (name item\+\_\+name), specifies the item name.
+
+{\bfseries type} $<$string$>$\+: example (type tag), specifies the item type on whose basis the configuration is properly carried out.
+
+{\bfseries active} $<$string$>$\+: example (active on), specifies whether the item should be taken into account for generating the field (\char`\"{}on\char`\"{}) or not (\char`\"{}off\char`\"{}).
+
+{\bfseries center} $<$(double(x) double(y) double(z))$>$\+: example (center (-\/0.\+3 0.\+0 0.\+1)), specifies the xyz position of the item wrt the robot\textquotesingle{}s root reference frame.
+
+{\bfseries orientation} $<$(double(ax) double(ay) double(az) double(theta))$>$\+: example (orientation (1.\+0 0.\+0 0.\+0 3.\+14)), specifies the orientation of the item\textquotesingle{}s frame in axis/angle representation given wrt the robot\textquotesingle{}s root reference frame.
+
+{\bfseries color} $<$(double(r) double(g) double(b))$>$\+: example (color (255.\+0 0.\+0 0.\+0)), specifies the color of the ellipsoid in R\+G\+B format.
+
+{\bfseries radius} $<$(double(rx) double(ry) double(rz))$>$\+: example (radius (0.\+01 0.\+02 0.\+03)), specifies the dimension of the ellipsoid radii (in \mbox{[}m\mbox{]}) representing the item wrt item\textquotesingle{}s reference frame.
+
+The type \char`\"{}target\+\_\+msd\char`\"{} implements a target acting as a mass-\/spring-\/damper system on the end-\/effector within the d4c framework.
+
+Options specific to the \char`\"{}target\+\_\+msd\char`\"{} item\+:
+
+{\bfseries K} $<$double$>$\+: example (K 0.\+1), specifies the spring stiffness.
+
+{\bfseries D} $<$double$>$\+: example (D 0.\+1), specifies the damping factor.
+
+The type \char`\"{}obstacle\+\_\+gaussian\char`\"{} implements an obstacle acting as a multivariate gaussian repulsive field within the d4c framework.
+
+Options specific to the \char`\"{}obstacle\+\_\+gaussian\char`\"{} item\+:
+
+{\bfseries G} $<$double$>$\+: example (G 0.\+1), specifies the gain of the gaussian field.
+
+{\bfseries cut\+\_\+tails} $<$string$>$\+: example (cut\+\_\+tails on), specifies whether to cut or not the tails of the gaussian field out of the space occupied by the obstacle.
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!attach\+Tool\+Frame@{attach\+Tool\+Frame}}
+\index{attach\+Tool\+Frame@{attach\+Tool\+Frame}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{attach\+Tool\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::attach\+Tool\+Frame (
+\begin{DoxyParamCaption}
+\item[{const yarp\+::sig\+::\+Vector \&}]{x, }
+\item[{const yarp\+::sig\+::\+Vector \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_af2423c24c50073666982ce93bb1c9312}
+
+
+Attach a tool frame to the end-\/effector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a 3-\/d vector describing the position of the tool wrt the end-\/effector (meters). \\
+\hline
+{\em o} & a 4-\/d vector describing the orientation of the tool wrt the end-\/effector (axis-\/angle notation). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!clear\+Items@{clear\+Items}}
+\index{clear\+Items@{clear\+Items}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{clear\+Items}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::clear\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a19a3d52ae4415d106cbdf30fa7487a7f}
+
+
+Purge all the items contained in the table. 
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!close@{close}}
+\index{close@{close}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}virtual void i\+Cub\+::d4c\+::\+D4\+C\+::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a2b1d795a30a93b5ed76d91a13a545038}
+
+
+Stop the client/server and dispose it. 
+
+Called by destructor. \index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!disable\+Control@{disable\+Control}}
+\index{disable\+Control@{disable\+Control}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{disable\+Control}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::disable\+Control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_aa2b70621e2053127c25c00400b937231}
+
+
+Disable the control of the robot part. 
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!disable\+Field@{disable\+Field}}
+\index{disable\+Field@{disable\+Field}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{disable\+Field}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::disable\+Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_ac33e94206a98fa9f4cd4151e251f050e}
+
+
+Disable the generation of the d4c field. 
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!disable\+Simulation@{disable\+Simulation}}
+\index{disable\+Simulation@{disable\+Simulation}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{disable\+Simulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::disable\+Simulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_ac735547b8b00778bb523ac0e2a9acdf4}
+
+
+Disable the simulation of the robot part. 
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!enable\+Control@{enable\+Control}}
+\index{enable\+Control@{enable\+Control}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{enable\+Control}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::enable\+Control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a47d6b5e69fb5d56e4a34680d492cc830}
+
+
+Enable the control of the robot part. 
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+if simulation is on, it gets automatically disabled. 
+\end{DoxyNote}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!enable\+Field@{enable\+Field}}
+\index{enable\+Field@{enable\+Field}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{enable\+Field}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::enable\+Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a45e42c71e94db9285f8ceea5ac31070a}
+
+
+Enable the generation of the d4c field. 
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!enable\+Simulation@{enable\+Simulation}}
+\index{enable\+Simulation@{enable\+Simulation}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{enable\+Simulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::enable\+Simulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a182d7535cc875bccbd8044aa2cc075c3}
+
+
+Enable the simulation of the robot part. 
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+if control is on, it gets automatically disabled. 
+\end{DoxyNote}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!erase\+Item@{erase\+Item}}
+\index{erase\+Item@{erase\+Item}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{erase\+Item}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::erase\+Item (
+\begin{DoxyParamCaption}
+\item[{const int}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_af002871cc663a24c9a0e2b012b8a020c}
+
+
+Remove one item from the items table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the item identifier to be erased. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!execute\+Trajectory@{execute\+Trajectory}}
+\index{execute\+Trajectory@{execute\+Trajectory}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{execute\+Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::execute\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{const std\+::deque$<$ yarp\+::sig\+::\+Vector $>$ \&}]{traj\+Pos, }
+\item[{const std\+::deque$<$ yarp\+::sig\+::\+Vector $>$ \&}]{traj\+Orien, }
+\item[{const double}]{traj\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a6f66476a32900c4f706cd93184b4ba45}
+
+
+Execute the simulated trajectory provided by the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em traj\+Pos} & a list containing the whole trajectory of points (position). \\
+\hline
+{\em traj\+Orien} & a list containing the whole trajectory of points (orientation). \\
+\hline
+{\em traj\+Time} & the trajectory duration \mbox{[}s\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Active\+I\+F@{get\+Active\+I\+F}}
+\index{get\+Active\+I\+F@{get\+Active\+I\+F}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Active\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Active\+I\+F (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{active\+I\+F}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a601278b27f13393fbc50dd548f08fdda}
+
+
+Retrieve the interface currently active that controls the limb. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em active\+I\+F} & a string containing \char`\"{}right\char`\"{} or \char`\"{}left\char`\"{} depending on the active interface. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Control\+Status@{get\+Control\+Status}}
+\index{get\+Control\+Status@{get\+Control\+Status}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Control\+Status}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Control\+Status (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a00f45d51ca6bd89bb660db4520806b4b}
+
+
+Retrieve the current status of the robot part control. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & true/false on controlled/uncontrolled robot part. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Field@{get\+Field}}
+\index{get\+Field@{get\+Field}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Field}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Field (
+\begin{DoxyParamCaption}
+\item[{yarp\+::sig\+::\+Vector \&}]{field}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_aa82fff9783d8210c97bfcdbfa5d01813}
+
+
+Retrieve the current field as generated by the d4c framework. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & a 7-\/d Vector containing the current field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Field\+Status@{get\+Field\+Status}}
+\index{get\+Field\+Status@{get\+Field\+Status}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Field\+Status}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Field\+Status (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_abd5f01a0fbb06b5e6fd034ed0dc65873}
+
+
+Retrieve the current status of the d4c field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & true/false on enabled/disabled d4c field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Items@{get\+Items}}
+\index{get\+Items@{get\+Items}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Items}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Items (
+\begin{DoxyParamCaption}
+\item[{yarp\+::os\+::\+Bottle \&}]{items}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_ae922d4224e9be5fc4c72c720c45acef6}
+
+
+Retrieve the list of all available items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & the Bottle containing the retrieved list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Period@{get\+Period}}
+\index{get\+Period@{get\+Period}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Period}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Period (
+\begin{DoxyParamCaption}
+\item[{int \&}]{period}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a68985c5667ecf81a0990218f4edd441a}
+
+
+Retrieve the current thread period for d4c field generation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & the current thread period in \mbox{[}ms\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Point\+State@{get\+Point\+State}}
+\index{get\+Point\+State@{get\+Point\+State}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Point\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Point\+State (
+\begin{DoxyParamCaption}
+\item[{yarp\+::sig\+::\+Vector \&}]{x, }
+\item[{yarp\+::sig\+::\+Vector \&}]{o, }
+\item[{yarp\+::sig\+::\+Vector \&}]{xdot, }
+\item[{yarp\+::sig\+::\+Vector \&}]{odot}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a8e9e4d5fad4ad121864c93bacc392161}
+
+
+Retrieve the current trajectory state generated by the d4c framework. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a 3-\/d Vector containing the current position \mbox{[}m\mbox{]}. \\
+\hline
+{\em o} & a 4-\/d Vector containing the current orientation (axis/angle). \\
+\hline
+{\em xdot} & a 3-\/d Vector containing the current translational velocity \mbox{[}m/s\mbox{]}. \\
+\hline
+{\em odot} & a 4-\/d Vector containing the current rotational velocity (axis/angle). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Property@{get\+Property}}
+\index{get\+Property@{get\+Property}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Property}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Property (
+\begin{DoxyParamCaption}
+\item[{const int}]{item, }
+\item[{yarp\+::os\+::\+Property \&}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a6d9a79974f82e5447b62ce988ddac97c}
+
+
+Retrieve the properties of an existing item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the item identifier. \\
+\hline
+{\em options} & the Property object containing the item properties. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Simulation@{get\+Simulation}}
+\index{get\+Simulation@{get\+Simulation}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Simulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Simulation (
+\begin{DoxyParamCaption}
+\item[{yarp\+::sig\+::\+Vector \&}]{xhat, }
+\item[{yarp\+::sig\+::\+Vector \&}]{ohat, }
+\item[{yarp\+::sig\+::\+Vector \&}]{qhat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_ac3d362bba8082a83a3cfba1942c1370e}
+
+
+Sample step by step the trajectory the end-\/effector will follow as constrained by the d4c field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xhat} & a 3-\/d Vector containing the simulated position \mbox{[}m\mbox{]}. \\
+\hline
+{\em ohat} & a 4-\/d Vector containing the simulated orientation (axis/angle). \\
+\hline
+{\em qhat} & a Vector containing the corresponding part joints \mbox{[}degrees\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Simulation\+Status@{get\+Simulation\+Status}}
+\index{get\+Simulation\+Status@{get\+Simulation\+Status}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Simulation\+Status}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Simulation\+Status (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a4dab04b8c61043f2b2734b3604ecd527}
+
+
+Retrieve the current status of the robot part simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & true/false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Tool@{get\+Tool}}
+\index{get\+Tool@{get\+Tool}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Tool (
+\begin{DoxyParamCaption}
+\item[{yarp\+::sig\+::\+Vector \&}]{x, }
+\item[{yarp\+::sig\+::\+Vector \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a2ff9c69ba856930358efaa35cfa64585}
+
+
+Retrieve the coordinates of the tool currently attached to the end-\/effector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a 3-\/d vector containing the position of the tool (meters). \\
+\hline
+{\em o} & a 4-\/d vector containing the orientation of the tool (axis-\/angle notation). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+if no tool is attached, clearly the end-\/effector pose is returned. 
+\end{DoxyNote}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Tool\+Frame@{get\+Tool\+Frame}}
+\index{get\+Tool\+Frame@{get\+Tool\+Frame}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Tool\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Tool\+Frame (
+\begin{DoxyParamCaption}
+\item[{yarp\+::sig\+::\+Vector \&}]{x, }
+\item[{yarp\+::sig\+::\+Vector \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a0d20b0cba2b361c0e8d05e9f8e5c917a}
+
+
+Retrieve the frame of the tool currently attached to the end-\/effector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a 3-\/d vector containing the position of the tool wrt the end-\/effector (meters). \\
+\hline
+{\em o} & a 4-\/d vector containing the orientation of the tool wrt the end-\/effector (axis-\/angle notation). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!get\+Trajectory@{get\+Trajectory}}
+\index{get\+Trajectory@{get\+Trajectory}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{get\+Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::get\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{std\+::deque$<$ yarp\+::sig\+::\+Vector $>$ \&}]{traj\+Pos, }
+\item[{std\+::deque$<$ yarp\+::sig\+::\+Vector $>$ \&}]{traj\+Orien, }
+\item[{const unsigned int}]{max\+Iterations = {\ttfamily D4C\+\_\+DEFAULT\+\_\+MAXITERATIONS}, }
+\item[{const double}]{Ts = {\ttfamily D4C\+\_\+DEFAULT\+\_\+TS\+\_\+DISABLED}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_aec027b12db795a04fc670c0cd44f3e80}
+
+
+Retrieve the complete simulated trajectory as evolved from the current state point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em traj\+Pos} & a list containing the whole trajectory of points (position). \\
+\hline
+{\em traj\+Orien} & a list containing the whole trajectory of points (orientation). \\
+\hline
+{\em max\+Iterations} & maximum number of iterations performed to reach the target. \\
+\hline
+{\em Ts} & integration period \mbox{[}s\mbox{]}. If Ts$<$=0.\+0 then the configuration option \char`\"{}period\char`\"{} is used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!open@{open}}
+\index{open@{open}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::open (
+\begin{DoxyParamCaption}
+\item[{const yarp\+::os\+::\+Property \&}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a75eea02600be0bebb85d0deddd6ecb8e}
+
+
+Configure the client or the server part of d4c framework. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & contains the set of options in form of a Property object.\\
+\hline
+\end{DoxyParams}
+Available options for the client are\+:
+
+{\bfseries remote} $<$string$>$\+: example (remote /d4c\+\_\+server), specifies the server port stem-\/name to connect to.
+
+{\bfseries local} $<$string$>$\+: example (local /d4c\+\_\+client), specifies the the client stem-\/name to be used for opening ports.
+
+{\bfseries carrier} $<$string$>$\+: example (carrier udp), specifies the protocol used to connect yarp streaming ports.
+
+{\bfseries verbosity} $<$int$>$\+: example (verbosity 3), specifies the verbosity level of print-\/outs messages.
+
+Available options for the server are\+:
+
+{\bfseries device} $<$string$>$\+: example (device cartesiancontrollerclient), specifies the name of the device that implements the cartesian interface.
+
+{\bfseries name} $<$string$>$\+: example (name d4c\+\_\+server), specifies the name of the server to be launched.
+
+{\bfseries robot} $<$string$>$\+: example (robot icub), specifies the name of the robot to connect to.
+
+{\bfseries part} $<$string$>$\+: example (part right\+\_\+arm), specifies the robot part to be controlled.
+
+{\bfseries period} $<$int$>$\+: example (period 20), specifies the period given in \mbox{[}ms\mbox{]} to generate the d4c field.
+
+{\bfseries offline\+:} example (offline), lets the client/server start in offline mode.
+
+{\bfseries verbosity} $<$int$>$\+: example (verbosity 3), specifies the verbosity level of print-\/outs messages.
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!remove\+Tool\+Frame@{remove\+Tool\+Frame}}
+\index{remove\+Tool\+Frame@{remove\+Tool\+Frame}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{remove\+Tool\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::remove\+Tool\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a7129985803f69bd51fbb1368bd5f9f60}
+
+
+Remove the tool currently attached to the end-\/effector. 
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The end-\/effector is the tool again. 
+\end{DoxyNote}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!set\+Active\+I\+F@{set\+Active\+I\+F}}
+\index{set\+Active\+I\+F@{set\+Active\+I\+F}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{set\+Active\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::set\+Active\+I\+F (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{active\+I\+F}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a219e88e157347cb291d55bf5067e4ceb}
+
+
+Set the active interface for limb control. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em active\+I\+F} & a string containing \char`\"{}right\char`\"{} or \char`\"{}left\char`\"{} depending on the interface to enable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!set\+Period@{set\+Period}}
+\index{set\+Period@{set\+Period}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{set\+Period}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::set\+Period (
+\begin{DoxyParamCaption}
+\item[{const int}]{period}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_af9d4211503ab1a3ae73b00e16b731108}
+
+
+Allow changing the thread period for d4c field generation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & the new thread period in \mbox{[}ms\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!set\+Point\+Orientation@{set\+Point\+Orientation}}
+\index{set\+Point\+Orientation@{set\+Point\+Orientation}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{set\+Point\+Orientation}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::set\+Point\+Orientation (
+\begin{DoxyParamCaption}
+\item[{const yarp\+::sig\+::\+Vector \&}]{o, }
+\item[{const yarp\+::sig\+::\+Vector \&}]{odot}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a1d5d93db7189eb3949297b3937f4ef90}
+
+
+Allow changing the orientation state of the trajectory generated by the d4c framework. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & a 4-\/d Vector containing the new orientation (axis/angle). \\
+\hline
+{\em odot} & a 4-\/d Vector containing the new rotational velocity (axis/angle). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!set\+Point\+State@{set\+Point\+State}}
+\index{set\+Point\+State@{set\+Point\+State}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{set\+Point\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::set\+Point\+State (
+\begin{DoxyParamCaption}
+\item[{const yarp\+::sig\+::\+Vector \&}]{x, }
+\item[{const yarp\+::sig\+::\+Vector \&}]{o, }
+\item[{const yarp\+::sig\+::\+Vector \&}]{xdot, }
+\item[{const yarp\+::sig\+::\+Vector \&}]{odot}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a5ab471d083e50b057f6926bccfcc5593}
+
+
+Allow chainging the trajectory state generated by the d4c framework. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a 3-\/d Vector containing the new position \mbox{[}m\mbox{]}. \\
+\hline
+{\em o} & a 4-\/d Vector containing the new orientation (axis/angle). \\
+\hline
+{\em xdot} & a 3-\/d Vector containing the new translational velocity \mbox{[}m/s\mbox{]}. \\
+\hline
+{\em odot} & a 4-\/d Vector containing the new rotational velocity (axis/angle). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!set\+Point\+State\+To\+Tool@{set\+Point\+State\+To\+Tool}}
+\index{set\+Point\+State\+To\+Tool@{set\+Point\+State\+To\+Tool}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{set\+Point\+State\+To\+Tool}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::set\+Point\+State\+To\+Tool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a8ee6a9df7d60fa176b44e06b14cf8247}
+
+
+Allow setting the trajectory state equal to the currently attached tool state (or end-\/effector state if no tool is attached). 
+
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+\index{i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}!set\+Property@{set\+Property}}
+\index{set\+Property@{set\+Property}!i\+Cub\+::d4c\+::\+D4\+C@{i\+Cub\+::d4c\+::\+D4\+C}}
+\subsubsection[{set\+Property}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool i\+Cub\+::d4c\+::\+D4\+C\+::set\+Property (
+\begin{DoxyParamCaption}
+\item[{const int}]{item, }
+\item[{const yarp\+::os\+::\+Property \&}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classiCub_1_1d4c_1_1D4C_a066c48516b3927a3a5b32d38b69972a0}
+
+
+Allow changing the properties of an existing item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the item identifier. \\
+\hline
+{\em options} & the Property object containing the new item values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false if successful/failed. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/dev/icub-\/contrib-\/iit/d4c/lib/include/i\+Cub/d4c/d4c.\+h\end{DoxyCompactItemize}

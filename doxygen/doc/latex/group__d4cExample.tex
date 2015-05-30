@@ -1,0 +1,47 @@
+\section{d4c\+Example}
+\label{group__d4cExample}\index{d4c\+Example@{d4c\+Example}}
+
+
+Example module for the use of \hyperlink{group__d4c}{D4\+C Library}.  
+
+
+Example module for the use of \hyperlink{group__d4c}{D4\+C Library}. 
+
+\hypertarget{group__d4cServer_intro_sec}{}\subsection{Description}\label{group__d4cServer_intro_sec}
+This simple module steers the arm to a starting pose and then creates one d4c-\/target and one d4c-\/obstacle; thereby it enables the d4c field that in turn lets the robot end-\/effector attain the target avoiding the obstacle.
+
+It requires the \hyperlink{group__d4cServer}{d4c\+Server} running.\hypertarget{group__d4cServer_lib_sec}{}\subsection{Libraries}\label{group__d4cServer_lib_sec}
+
+\begin{DoxyItemize}
+\item Y\+A\+R\+P libraries.
+\item \hyperlink{group__d4c}{D4\+C} library.
+\end{DoxyItemize}\hypertarget{group__d4cServer_parameters_sec}{}\subsection{Parameters}\label{group__d4cServer_parameters_sec}
+--robot {\itshape robot} 
+\begin{DoxyItemize}
+\item select the robot to connect to.
+\end{DoxyItemize}
+
+--part {\itshape part} 
+\begin{DoxyItemize}
+\item select the part to control.
+\end{DoxyItemize}
+
+--remote {\itshape name} 
+\begin{DoxyItemize}
+\item specify the d4c server name to connect to.
+\end{DoxyItemize}
+
+--local {\itshape name} 
+\begin{DoxyItemize}
+\item specify the d4c client stem-\/name.
+\end{DoxyItemize}
+
+--verbosity {\itshape level} 
+\begin{DoxyItemize}
+\item specify the verbosity level of the d4c client print-\/outs.
+\end{DoxyItemize}\hypertarget{group__d4cServer_tested_os_sec}{}\subsection{Tested O\+S}\label{group__d4cServer_tested_os_sec}
+Windows, Linux
+
+\begin{DoxyAuthor}{Author}
+Ilaria Gori, Ugo Pattacini 
+\end{DoxyAuthor}
