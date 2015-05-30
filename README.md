@@ -152,7 +152,7 @@ client.enableControl();
 ```
 
 For online documentation of all the methods composing the D4C Library,
-please refer to the [Doxygen Documentation]().
+please refer to the [Doxygen Documentation](http://robotology.github.com/stereo-vision).
 
 
 ### Tutorials
