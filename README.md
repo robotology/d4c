@@ -16,13 +16,16 @@ objects as obstacles or as targets, and to consequently build a virtual force
 field to reach the target avoiding obstacles.
 
 For the target a mass-spring-damper force field is generated:
+
 ![](https://github.com/robotology/d4c/blob/master/img/MassSpringDump.jpg)
 
 Each obstacle is modeled as a Gaussian repulsive force field. It is possible to
 choose between a canonical multivariate Gaussian force field:
+
 ![](https://github.com/robotology/d4c/blob/master/img/GaussianForceField.jpg)
 
 and a Gaussian force field without tails:
+
 ![](https://github.com/robotology/d4c/blob/master/img/GaussianWithoutTails.jpg)
 
 Since the tuning of the parameters is a critical point, we’re going to implement
@@ -37,13 +40,16 @@ It allows you to modify parameters and to compute easily the virtual trajectory
 generated from the combination of the virtual force fields associated to target
 and obstacles. It is also possible to add a Gaussian attractor on the target
 which will be summed to the mass-spring-damper force field.
-![Obstacles modeled as Gaussians with tails in the first image, and without tails in the second](https://github.com/robotology/d4c/blob/master/img/WithAndWithoutTails.jpg)
+![](https://github.com/robotology/d4c/blob/master/img/WithAndWithoutTails.jpg)
+Obstacles modeled as Gaussians with tails in the first image, and without tails
+in the second.
 
 As it is possible to notice from the figure, local minima can be reached.
 These situations can be avoided with the method explained in "_Randazzo M.,
 Sgorbissa A. and Zaccaria R. µNav: Navigation without localization_".
-![In the first case the trajectory stops in a local minima, in the second case
-the trajectory bypass the obstacles correctly](https://github.com/robotology/d4c/blob/master/img/LocalMinima.jpg).
+![](https://github.com/robotology/d4c/blob/master/img/LocalMinima.jpg)
+In the first case the trajectory stops in a local minima, in the second case
+the trajectory bypass the obstacles correctly.
 
 It is possible to download the two MATLAB models (the one without methods for
 local minima, and the other one with methods for local minima) from [here](http://wiki.icub.org/images/8/83/PmpModels.zip).
@@ -51,7 +57,9 @@ local minima, and the other one with methods for local minima) from [here](http:
 ### The Cartesian I/F Implementation
 The D4C library exploits the [Cartesian Interface](http://wiki.icub.org/iCub/main/dox/html/icub_cartesian_interface.html),
 and it is built as follows:
-![](https://github.com/robotology/d4c/blob/master/img/D4C_architecture.jpg)
+<p align="center">
+  <img src="https://github.com/robotology/d4c/blob/master/img/D4C_architecture.jpg"/>
+</p>
 
 There is a server, with the aim to instantiate, modify or delete objects, generate
 force fields and compute the trajectory, which is transmitted to the Cartesian Interface.
@@ -63,9 +71,12 @@ Notably, the D4C server is capable of sending proper information
 to the [iCubGui](http://wiki.icub.org/iCub/main/dox/html/group__icub__gui.html)
 in order to display a pictorial representation of the set of targets, obstacles
 and generated trajectories as depicted below.
-![](https://github.com/robotology/d4c/blob/master/img/icubgui.jpg)
+<p align="center">
+  <img src="https://github.com/robotology/d4c/blob/master/img/icubgui.jpg"/>
+</p>
 
-### The Code
+
+### Code Snippets and Documentation
 In order to use the D4C Library it is required to add the Cartesian Interface
 to the _CMakeLists.txt_ file. It is possible to do it by following the Cartesian
 Interface [tutorial](http://wiki.icub.org/iCub/main/dox/html/icub_cartesian_interface.html).
@@ -75,7 +86,7 @@ It is also required to include in the _CMakeLists.txt_ the following line:
 target_link_libraries(${PROJECTNAME} ${YARP_LIBRARIES} d4c)
 ```
 
-In order to open a d4c_server:
+In order to open a `d4c_server`:
 ```cpp
 ...
 #include <iCub/d4c/d4c_server.h>
@@ -91,7 +102,7 @@ options.put("part","right_arm");
 server.open(options);
 ```
 
-In order to open a d4c_client:
+In order to open a `d4c_client`:
 ```cpp
 ...
 #include <iCub/d4c/d4c_client.h>
@@ -138,8 +149,8 @@ velocity it is possible to use the method
 ```cpp
 client.setPointState(x,o,xdot,odot);
 ```
-where 'x' represents the position and 'o' the orientation, so as 'xdot' and 'odot'
-the corresponding velocities.
+where **x** represents the position and **o** the orientation, so as **xdot** and
+**odot** the corresponding velocities.
 
 The user might want to enable the force field generation without enabling robot movements:
 ```cpp
@@ -152,7 +163,7 @@ client.enableControl();
 ```
 
 For online documentation of all the methods composing the D4C Library,
-please refer to the [Doxygen Documentation](http://robotology.github.com/stereo-vision).
+please refer to the [Doxygen Documentation](http://robotology.github.com/d4c).
 
 
 ### Tutorials
@@ -167,7 +178,7 @@ Tracking and Obstacle Avoidance in Humanoid Robots](http://wiki.icub.org/images/
 IEEE-RAS International Conference on Humanoid Robots, Osaka, Japan, November 29 - December 1, 2012.
 
 
-### videos
+### Videos
 - [EFAA 1st Year Review Demo](http://www.youtube.com/watch?v=npBugYmf59U): the
   library at work within the EFAA EU project.
 - [Humanoids2012 Video](http://www.youtube.com/watch?v=QR30jnW_bvY): the official
