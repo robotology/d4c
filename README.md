@@ -149,8 +149,8 @@ velocity it is possible to use the method
 ```cpp
 client.setPointState(x,o,xdot,odot);
 ```
-where **x** represents the position and **o** the orientation, so as **xdot** and
-**odot** the corresponding velocities.
+where `x` represents the position and `o` the orientation, so as `xdot` and
+`odot` the corresponding velocities.
 
 The user might want to enable the force field generation without enabling robot movements:
 ```cpp
