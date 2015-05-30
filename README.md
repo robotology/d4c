@@ -76,6 +76,12 @@ and generated trajectories as depicted below.
 </p>
 
 
+### Dependencies
+- [YARP](https://github.com/robotology/yarp)
+- [iCub](https://github.com/robotology/icub-main)
+- [icub-contrib-common](https://github.com/robotology/icub-contrib-common)
+
+
 ### Code Snippets and Documentation
 In order to use the D4C Library it is required to add the Cartesian Interface
 to the _CMakeLists.txt_ file. It is possible to do it by following the Cartesian
@@ -167,9 +173,9 @@ please refer to the [Doxygen Documentation](http://robotology.github.com/d4c).
 
 
 ### Tutorials
-Under `modules/d4cServer` and `modules/d4cExample` the user will find further
-info on how to open a `d4c_server` and a `d4c_client`, and how to write the
-related _CMakeLists.txt_.
+In `modules/d4cServer` and `modules/d4cExample` the user will find further info
+on how to open a `d4c_server` component and a `d4c_client` component, respectively,
+and how to write the corresponding _CMakeLists.txt_.
 
 
 ### Dissemination
