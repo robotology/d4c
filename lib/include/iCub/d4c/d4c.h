@@ -20,7 +20,7 @@
  *  
  * Abstract class to deal with <b>Dynamic Force Field 
  * Control</b> (<a 
- * href="http://wiki.icub.org/images/5/5a/DForC.pdf">D4C</a>). 
+ * href="http://dx.doi.org/10.1109/HUMANOIDS.2012.6651573">D4C</a>). 
  *  
  * For further details please refer to the <a 
  * href="http://wiki.icub.org/wiki/D4C Framework">wiki</a>.

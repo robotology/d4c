@@ -173,14 +173,16 @@ please refer to the [Doxygen Documentation](http://robotology.github.com/d4c).
 
 
 ### Tutorials
-In `modules/d4cServer` and `modules/d4cExample` the user will find further info
-on how to open a `d4c_server` component and a `d4c_client` component, respectively,
-and how to write the corresponding _CMakeLists.txt_.
+In [`modules/d4cServer`](https://github.com/robotology/d4c/blob/master/modules/d4cServer/main.cpp)
+and [`modules/d4cExample`](https://github.com/robotology/d4c/blob/master/modules/d4cExample/main.cpp)
+the user will find further info on how to open a `d4c_server` component and a
+`d4c_client` component, respectively, and how to write the corresponding
+_CMakeLists.txt_.
 
 
 ### Dissemination
 Gori I., Pattacini U., Nori F., Metta G. & Sandini G., [DForC: a Real-Time Method for Reaching,
-Tracking and Obstacle Avoidance in Humanoid Robots](http://wiki.icub.org/images/5/5a/DForC.pdf),
+Tracking and Obstacle Avoidance in Humanoid Robots](http://dx.doi.org/10.1109/HUMANOIDS.2012.6651573),
 IEEE-RAS International Conference on Humanoid Robots, Osaka, Japan, November 29 - December 1, 2012.
 
 
