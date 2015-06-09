@@ -82,7 +82,12 @@ and generated trajectories as depicted below.
 - [icub-contrib-common](https://github.com/robotology/icub-contrib-common)
 
 
-### Code Snippets and Documentation
+### Documentation
+For online documentation of all the methods composing the D4C Library,
+please refer to the [Doxygen Documentation](http://robotology.github.com/d4c).
+
+
+### Code Snippets
 In order to use the D4C Library it is required to add the Cartesian Interface
 to the _CMakeLists.txt_ file. It is possible to do it by following the Cartesian
 Interface [tutorial](http://wiki.icub.org/iCub/main/dox/html/icub_cartesian_interface.html).
@@ -167,10 +172,6 @@ In order to enable also robot movements:
 ```cpp
 client.enableControl();
 ```
-
-For online documentation of all the methods composing the D4C Library,
-please refer to the [Doxygen Documentation](http://robotology.github.com/d4c).
-
 
 ### Tutorials
 In [`modules/d4cServer`](https://github.com/robotology/d4c/blob/master/modules/d4cServer/main.cpp)
