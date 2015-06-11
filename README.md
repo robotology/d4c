@@ -192,3 +192,9 @@ IEEE-RAS International Conference on Humanoid Robots, Osaka, Japan, November 29 
   library at work within the EFAA EU project.
 - [Humanoids2012 Video](http://www.youtube.com/watch?v=QR30jnW_bvY): the official
   DForC video recorded for Humanoids2012 conference.
+
+
+### License
+
+Material included here is Copyright of _iCub Facility - Istituto Italiano di Tecnologia_
+and is released under the terms of the GPL v2.0 or later. See the file LICENSE for details.
