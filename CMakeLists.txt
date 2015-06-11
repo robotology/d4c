@@ -28,5 +28,5 @@ add_definitions(${YARP_DEFINES})
 add_subdirectory(lib)
 add_subdirectory(modules)
 
-icubcontrib_finalize_export(stereoVision)
+icubcontrib_finalize_export(d4c)
 icubcontrib_add_uninstall_target()
