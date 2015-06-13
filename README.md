@@ -83,8 +83,8 @@ and generated trajectories as depicted below.
 
 
 ### Documentation
-For online documentation of all the methods composing the D4C Library,
-please refer to the [Doxygen Documentation](http://robotology.github.com/d4c).
+For online documentation of all the methods please refer to the
+[Doxygen Documentation](http://robotology.github.com/d4c).
 
 
 ### Code Snippets
